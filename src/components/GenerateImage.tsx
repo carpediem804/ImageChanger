@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Input from "@/components/Input";
 import Button from "@/components/Button";
-import { POST } from "@/app/images/edit/route";
 
 interface Props {
   getImageData: () => Promise<any>;

@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     const apiKey = process.env.OPENAPI_KEY;
     const formData = await request.formData();
     
-    // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    //  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
     const res = await fetch("https://api.openai.com/v1/images/edits", {
       method: "POST",
@@ -22,10 +22,3 @@ export async function POST(request: Request) {
     return Response.json(data);
   }
 
-
-  
-export const config = {
-    api: {
-      bodyParser: false
-    },
-  };
