@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { IncomingForm } from 'formidable';
 
+export const maxDuration = 180; // This function can run for a maximum of 5 seconds
 // 응답 데이터 타입 정의
 
 export async function POST(request: Request) {
